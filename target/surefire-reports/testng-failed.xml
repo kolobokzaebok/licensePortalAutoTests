@@ -5,7 +5,7 @@
     <classes>
       <class name="licenseportal.LoginTest">
         <methods>
-          <include name="Login"/>
+          <include name="unsuccessfulLogin"/>
         </methods>
       </class> <!-- licenseportal.LoginTest -->
     </classes>

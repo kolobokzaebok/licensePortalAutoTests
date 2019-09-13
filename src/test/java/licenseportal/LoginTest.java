@@ -8,31 +8,31 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class LoginTest extends LoginPage {
-    private String loginURL = "";
+
 
     public LoginTest() throws IOException {
     }
 
     @Test
     public void unsuccessfulLogin() {
-        driver.get(loginURL);
+        driver.get(super.baseUrl);
         submitEmail().clear();
         submitEmail().sendKeys("Zalupa");
         submitPassword().clear();
         submitPassword().sendKeys("Zalupa");
         submitSubmit().click();
-        driver.close();
+//        driver.close();
     }
 
     @Test
     public void successfulLogin() {
-        driver.get(loginURL);
+        driver.get(super.baseUrl);
         submitEmail().clear();
         submitEmail().sendKeys("Zalupa");
         submitPassword().clear();
         submitPassword().sendKeys("Zalupa");
         submitSubmit().click();
-        driver.close();
+//        driver.close();
     }
 
 }

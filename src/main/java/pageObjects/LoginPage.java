@@ -11,9 +11,11 @@ import java.io.IOException;
 
 public class LoginPage extends Base {
     public WebDriver driver;
+    public String baseUrl;
 
     public LoginPage() throws IOException {
         this.driver = super.initializeDriver();
+        this.baseUrl = super.getUrl();
         PageFactory.initElements(driver, this);
     }
 

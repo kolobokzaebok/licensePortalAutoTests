@@ -1,5 +1,7 @@
-package licenseportal;
+package testObjects;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 
@@ -21,18 +23,24 @@ public class LoginTest extends LoginPage {
         submitPassword().clear();
         submitPassword().sendKeys("Zalupa");
         submitSubmit().click();
-//        driver.close();
+        Assert.assertEquals(driver.getTitle(), "License Management");
     }
 
-    @Test
+    //@Test
     public void successfulLogin() {
         driver.get(super.baseUrl);
         submitEmail().clear();
-        submitEmail().sendKeys("Zalupa");
+        submitEmail().sendKeys(super.baseEmail);
         submitPassword().clear();
-        submitPassword().sendKeys("Zalupa");
+        submitPassword().sendKeys(super.basePassword);
         submitSubmit().click();
-//        driver.close();
+        Assert.assertEquals(driver.getTitle(), "License Management");
+    }
+
+    @AfterTest
+    public void closeBrowser() {
+        driver.close();
+        driver = null;
     }
 
 }

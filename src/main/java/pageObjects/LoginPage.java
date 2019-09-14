@@ -1,7 +1,6 @@
 package pageObjects;
 
-import licenseportal.Base;
-import org.openqa.selenium.By;
+import resources.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,10 +11,14 @@ import java.io.IOException;
 public class LoginPage extends Base {
     public WebDriver driver;
     public String baseUrl;
+    public String baseEmail;
+    public String basePassword;
 
     public LoginPage() throws IOException {
         this.driver = super.initializeDriver();
         this.baseUrl = super.getUrl();
+        this.baseEmail = super.getEmail();
+        this.basePassword = super.getPassword();
         PageFactory.initElements(driver, this);
     }
 

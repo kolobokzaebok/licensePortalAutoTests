@@ -22,14 +22,12 @@ public class TestListeners extends Base implements ITestListener {
     }
 
     @Override
-    public void onTestFailure(ITestResult result) {
+    public void onTestFailure(ITestResult iTestResult) {
         try {
-            getScreenshot(result.getName());
+            getScreenshot(iTestResult.getName());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("ZALUPA");
-
     }
 
     @Override

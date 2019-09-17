@@ -74,7 +74,7 @@ public class Base {
                 driverLocation = localDirectoryName + "/src/main/java/resources/chromedriver";
             } else {
                 //OS: Windows
-                driverLocation = localDirectoryName + "\\src\\main\\java\\resources\\chromedriver";
+                driverLocation = localDirectoryName + "\\src\\main\\java\\resources\\cdriver.exe";
             }
             System.setProperty("webdriver.chrome.driver", driverLocation);
 

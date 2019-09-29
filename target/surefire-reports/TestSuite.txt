@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.944 s <<< FAILURE! - in TestSuite
-unsuccessfulLogin(testObjects.LoginTest)  Time elapsed: 1.052 s  <<< FAILURE!
-java.lang.AssertionError: expected [License Management] but found [Login]
-	at testObjects.LoginTest.unsuccessfulLogin(LoginTest.java:33)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.202 s <<< FAILURE! - in TestSuite
+generatePermanentPurchased(testObjects.GenerateTest)  Time elapsed: 1.726 s  <<< FAILURE!
+java.lang.AssertionError: expected [License Management] but found [License Generation]
+	at testObjects.GenerateTest.generatePermanentPurchased(GenerateTest.java:18)
 

@@ -9,18 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">All Test Suite</th></tr>
-<tr><td><a href="#t0">C:/projects/autotests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,129</td><td></td><td></td></tr>
+<tr><td><a href="#t0">login</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">2,602</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">generate</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,732</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">4,334</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">C:/projects/autotests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testObjects.LoginTest</td><td><a href="#m0">unsuccessfulLogin</a></td><td rowspan="1">1568608632686</td><td rowspan="1">873</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testObjects.LoginTest</td><td><a href="#m0">successfulLogin</a></td><td rowspan="1">1569549898993</td><td rowspan="1">1081</td></tr><tr class="passedeven"><td><a href="#m1">unsuccessfulLogin</a></td><td rowspan="1">1569549898063</td><td rowspan="1">929</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">generate &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testObjects.GenerateTest</td><td><a href="#m2">generatePermanentPurchased</a></td><td rowspan="1">1569549900670</td><td rowspan="1">1729</td></tr></tbody>
 </table>
-<h2>C:/projects/autotests</h2><h3 id="m0">testObjects.LoginTest#unsuccessfulLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [License Management] but found [Login]
+<h2>login</h2><h3 id="m0">testObjects.LoginTest#successfulLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testObjects.LoginTest#unsuccessfulLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>generate</h2><h3 id="m2">testObjects.GenerateTest#generatePermanentPurchased</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [License Management] but found [License Generation]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at testObjects.LoginTest.unsuccessfulLogin(LoginTest.java:33)
+	at testObjects.LoginTest.successfulLogin(LoginTest.java:50)
+	at testObjects.GenerateTest.generatePermanentPurchased(GenerateTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

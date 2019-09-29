@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <listeners>
-    <listener class-name="resources.TestListeners"/>
-  </listeners>
-  <test thread-count="5" name="C:/projects/autotests(failed)" verbose="0">
+  <test thread-count="5" name="generate(failed)" verbose="0">
     <classes>
-      <class name="testObjects.LoginTest">
+      <class name="testObjects.GenerateTest">
         <methods>
-          <include name="unsuccessfulLogin"/>
-          <include name="closeBrowser"/>
+          <include name="generatePermanentPurchased"/>
         </methods>
-      </class> <!-- testObjects.LoginTest -->
+      </class> <!-- testObjects.GenerateTest -->
     </classes>
-  </test> <!-- C:/projects/autotests(failed) -->
+  </test> <!-- generate(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-16T04:37:12Z" name="All Test Suite" finished-at="2019-09-16T04:37:13Z" duration-ms="1129">
+  <suite started-at="2019-09-27T02:04:58Z" name="All Test Suite" finished-at="2019-09-27T02:05:02Z" duration-ms="4350">
     <groups>
     </groups>
-    <test started-at="2019-09-16T04:37:12Z" name="C:/projects/autotests" finished-at="2019-09-16T04:37:13Z" duration-ms="1129">
+    <test started-at="2019-09-27T02:04:58Z" name="login" finished-at="2019-09-27T02:05:00Z" duration-ms="2602">
       <class name="testObjects.LoginTest">
-        <test-method signature="unsuccessfulLogin()[pri:0, instance:testObjects.LoginTest@4a335fa8]" started-at="2019-09-16T04:37:12Z" name="unsuccessfulLogin" finished-at="2019-09-16T04:37:13Z" duration-ms="873" status="FAIL">
+        <test-method signature="unsuccessfulLogin()[pri:0, instance:testObjects.LoginTest@2c3dec30]" started-at="2019-09-27T02:04:58Z" name="unsuccessfulLogin" finished-at="2019-09-27T02:04:58Z" duration-ms="929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unsuccessfulLogin -->
+        <test-method signature="successfulLogin()[pri:0, instance:testObjects.LoginTest@2c3dec30]" started-at="2019-09-27T02:04:58Z" name="successfulLogin" finished-at="2019-09-27T02:05:00Z" duration-ms="1081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.LoginTest@2c3dec30]" started-at="2019-09-27T02:05:00Z" name="closeBrowser" finished-at="2019-09-27T02:05:00Z" duration-ms="579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testObjects.LoginTest -->
+    </test> <!-- login -->
+    <test started-at="2019-09-27T02:05:00Z" name="generate" finished-at="2019-09-27T02:05:02Z" duration-ms="1732">
+      <class name="testObjects.GenerateTest">
+        <test-method signature="generatePermanentPurchased()[pri:0, instance:testObjects.GenerateTest@841e575]" started-at="2019-09-27T02:05:00Z" name="generatePermanentPurchased" finished-at="2019-09-27T02:05:02Z" duration-ms="1729" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [License Management] but found [Login]]]>
+              <![CDATA[expected [License Management] but found [License Generation]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [License Management] but found [Login]
+              <![CDATA[java.lang.AssertionError: expected [License Management] but found [License Generation]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at testObjects.LoginTest.unsuccessfulLogin(LoginTest.java:33)
+at testObjects.LoginTest.successfulLogin(LoginTest.java:50)
+at testObjects.GenerateTest.generatePermanentPurchased(GenerateTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,12 +72,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- unsuccessfulLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.LoginTest@4a335fa8]" started-at="2019-09-16T04:37:13Z" name="closeBrowser" finished-at="2019-09-16T04:37:13Z" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testObjects.LoginTest -->
-    </test> <!-- C:/projects/autotests -->
+        </test-method> <!-- generatePermanentPurchased -->
+      </class> <!-- testObjects.GenerateTest -->
+    </test> <!-- generate -->
   </suite> <!-- All Test Suite -->
 </testng-results>

@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <listeners>
-        <listener class-name="resources.TestListeners"/>
-    </listeners>
-<test verbose="2" preserve-order="true" name="C:/projects/autotests">
-    <classes>
-        <class name="testObjects.LoginTest">
-            <methods>
-                <include name="unsuccessfulLogin"/>
-            </methods>
-        </class>
-    </classes>
-</test>
+    <test verbose="3" preserve-order="true" name="login">
+        <classes>
+            <class name="testObjects.LoginTest">
+                <methods>
+                    <include name="unsuccessfulLogin"/>
+                    <include name="successfulLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="3" preserve-order="true" name="generate">
+        <classes>
+            <class name="testObjects.GenerateTest">
+                <methods>
+                    <include name="generatePermanentPurchased"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

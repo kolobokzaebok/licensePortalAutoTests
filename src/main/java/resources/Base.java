@@ -6,19 +6,17 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Stream;
 
 public class Base {
     private static WebDriver driver;
-    private int implicitWaitTime;
+    private static int implicitWaitTime;
     private Properties baseProp;
     private String baseUrl;
     private String baseEmail;
@@ -45,6 +43,7 @@ public class Base {
         this.baseUrl = baseProp.getProperty("url");
         this.baseEmail = baseProp.getProperty("login");
         this.basePassword = baseProp.getProperty("password");
+        this.implicitWaitTime = Integer.parseInt(baseProp.getProperty("implicitWait"));
     }
 
     // Login Page data
@@ -92,9 +91,7 @@ public class Base {
             // initialize driver with a default value
         }
 
-        // once initialized, a global default implicit timeout can be set (in seconds)
-        implicitWaitTime = Integer.parseInt(baseProp.getProperty("implicitWait"));
-        driver.manage().timeouts().implicitlyWait(implicitWaitTime, TimeUnit.SECONDS);
+        setImplicitWait();
 
         return driver;
     }
@@ -111,6 +108,12 @@ public class Base {
             dest = new File(String.format(localDirectoryName + "\\screenshots\\%s.png", name));
         }
         FileUtils.copyFile(src, dest);
+    }
+
+    //set implicit wait
+    public static void setImplicitWait() {
+        // once initialized, a global default implicit timeout can be set (in seconds)
+        driver.manage().timeouts().implicitlyWait(implicitWaitTime, TimeUnit.SECONDS);
     }
 
 }

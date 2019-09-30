@@ -1,53 +1,55 @@
 package testObjects;
 
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
-
+import resources.Base;
 
 import java.io.IOException;
 
-public class LoginTest extends LoginPage {
-
+public class LoginTest{
+    private WebDriver driver;
+    Base bs = new Base();
+    LoginPage lp;
 
     public LoginTest() throws IOException {
+        this.driver = bs.initializeDriver();
+        lp = new LoginPage(driver);
+    }
+
+    static void privateLogin(WebDriver driver,
+                             WebElement loginField,
+                             WebElement passwordField,
+                             WebElement clickButton,
+                             String login,
+                             String password,
+                             String url,
+                             String title) {
+        driver.get(url);
+        loginField.clear();
+        loginField.sendKeys(login);
+        passwordField.clear();
+        passwordField.sendKeys(password);
+        clickButton.click();
+        Assert.assertEquals(driver.getTitle(), title);
     }
 
     @Test
     public void unsuccessfulLogin() {
-        driver.get(super.baseUrl);
-        submitEmail().clear();
-        submitEmail().sendKeys("Zalupa");
-        submitPassword().clear();
-        submitPassword().sendKeys("Zalupa");
-        submitSubmit().click();
-        Assert.assertEquals(driver.getTitle(), "Login");
+        privateLogin(this.driver, lp.submitEmail(), lp.submitPassword(),
+                lp.submitSubmit(), "Zalupa", "Zalupa", lp.getUrl(),
+                "Login");
     }
-
 
     @Test
     public void successfulLogin() {
-        driver.get(baseUrl);
-        submitEmail().clear();
-        submitEmail().sendKeys(super.baseEmail);
-        submitPassword().clear();
-        submitPassword().sendKeys(super.basePassword);
-        submitSubmit().click();
-        Assert.assertEquals(driver.getTitle(), "License Management");
-    }
-
-    public void successfulLogin(String address) {
-        driver.get(address);
-        submitEmail().clear();
-        submitEmail().sendKeys(super.baseEmail);
-        submitPassword().clear();
-        submitPassword().sendKeys(super.basePassword);
-        submitSubmit().click();
-        Assert.assertEquals(driver.getTitle(), "License Management");
+        privateLogin(this.driver, lp.submitEmail(), lp.submitPassword(),
+                lp.submitSubmit(), lp.getEmail(), lp.getPassword(), lp.getUrl(),
+                "License Management");
     }
 
     @AfterTest
@@ -55,7 +57,4 @@ public class LoginTest extends LoginPage {
         driver.quit();
         driver = null;
     }
-
-
-
 }

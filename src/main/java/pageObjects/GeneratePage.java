@@ -10,17 +10,16 @@ import java.io.IOException;
 
 public class GeneratePage extends Base {
     private static String generateTabUrl;
-    private static WebDriver driver;
 
     static {
         generateTabUrl = "http://nxlicensed.hdw.mx/nxlicensed/generation/";
     }
 
-    public String getAddress() {
+    public static String getAddress() {
         return generateTabUrl;
     }
 
-    public GeneratePage() throws IOException {
+    public GeneratePage(WebDriver driver) throws IOException {
         PageFactory.initElements(driver, this);
     }
 

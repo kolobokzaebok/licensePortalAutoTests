@@ -6,7 +6,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 public class Base {
     private static WebDriver driver;
     private static int implicitWaitTime;
-    private Properties baseProp;
     private String baseUrl;
     private String baseEmail;
     private String basePassword;
@@ -27,9 +25,9 @@ public class Base {
     // Base Constructor
     public Base() throws IOException {
         FileInputStream baseFile;
-        this.osName = System.getProperty("os.name").toLowerCase();
-        this.localDirectoryName = System.getProperty("user.dir");
-        this.baseProp = new Properties();
+        osName = System.getProperty("os.name").toLowerCase();
+        localDirectoryName = System.getProperty("user.dir");
+        Properties baseProp = new Properties();
 
         if (osName.equals("linux")) {
             //OS: Linux
@@ -39,11 +37,11 @@ public class Base {
             baseFile = new FileInputStream(localDirectoryName + "\\src\\main\\java\\resources\\baseData.properties");
         }
 
-        this.baseProp.load(baseFile);
+        baseProp.load(baseFile);
         this.baseUrl = baseProp.getProperty("url");
         this.baseEmail = baseProp.getProperty("login");
         this.basePassword = baseProp.getProperty("password");
-        this.implicitWaitTime = Integer.parseInt(baseProp.getProperty("implicitWait"));
+        implicitWaitTime = Integer.parseInt(baseProp.getProperty("implicitWait"));
     }
 
     // Login Page data

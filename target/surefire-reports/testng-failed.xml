@@ -4,14 +4,15 @@
   <listeners>
     <listener class-name="resources.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="login(failed)" verbose="0">
+  <test thread-count="5" name="generate(failed)" verbose="0">
     <classes>
-      <class name="testObjects.LoginTest">
+      <class name="testObjects.GenerateTest">
         <methods>
-          <include name="unsuccessfulLogin"/>
+          <include name="authorize"/>
+          <include name="generatePermanentPurchased"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testObjects.LoginTest -->
+      </class> <!-- testObjects.GenerateTest -->
     </classes>
-  </test> <!-- login(failed) -->
+  </test> <!-- generate(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

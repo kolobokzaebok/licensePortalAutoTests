@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.GeneratePage;
 import pageObjects.LoginPage;
-import resources.Base;
+import resources.DriverInit;
 
 import java.io.IOException;
 
@@ -15,8 +15,8 @@ public class GenerateTest {
     private LoginPage lp;
 
     public GenerateTest() throws IOException {
-        Base bs = new Base();
-        this.driver = bs.initializeDriver();
+        DriverInit dr = new DriverInit();
+        this.driver = dr.initializeDriver();
         GeneratePage gp = new GeneratePage(this.driver);
         lp = new LoginPage(this.driver);
     }

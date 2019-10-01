@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 
 import java.io.IOException;
 
-public class TestListeners extends Base implements ITestListener {
+public class TestListeners extends DriverInit implements ITestListener {
 
     public TestListeners() throws IOException {
     }

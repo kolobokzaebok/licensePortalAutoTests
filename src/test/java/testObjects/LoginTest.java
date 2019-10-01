@@ -8,16 +8,17 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import resources.Base;
+import resources.DriverInit;
 
 import java.io.IOException;
 
 public class LoginTest{
     private WebDriver driver;
-    Base bs = new Base();
     LoginPage lp;
 
     public LoginTest() throws IOException {
-        this.driver = bs.initializeDriver();
+        DriverInit dr = new DriverInit();
+        this.driver = dr.initializeDriver();
         lp = new LoginPage(driver);
     }
 

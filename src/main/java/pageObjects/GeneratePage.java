@@ -4,11 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import resources.Base;
 
-import java.io.IOException;
-
-public class GeneratePage extends Base {
+public class GeneratePage {
     private static String generateTabUrl;
 
     static {
@@ -19,7 +16,7 @@ public class GeneratePage extends Base {
         return generateTabUrl;
     }
 
-    public GeneratePage(WebDriver driver) throws IOException {
+    public GeneratePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 

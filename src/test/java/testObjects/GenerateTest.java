@@ -11,24 +11,21 @@ import pageObjects.GeneratePage;
 import pageObjects.LoginPage;
 import resources.DriverInit;
 
-import java.awt.*;
 import java.io.IOException;
-import java.util.Set;
 
 public class GenerateTest {
     private WebDriver driver;
-    private LoginPage lp;
     private GeneratePage gp;
 
     public GenerateTest() throws IOException {
         DriverInit dr = new DriverInit();
         this.driver = dr.initializeDriver();
         gp = new GeneratePage(this.driver);
-        lp = new LoginPage(this.driver);
     }
 
     @BeforeTest
-    public void authorize() {
+    public void authorize() throws IOException {
+        LoginPage lp = new LoginPage(this.driver);
         LoginTest.privateLogin(this.driver, lp.submitEmail(), lp.submitPassword(),
                 lp.submitSubmit(), lp.getEmail(), lp.getPassword(), GeneratePage.getAddress(),
                 "License Generation");
@@ -60,10 +57,8 @@ public class GenerateTest {
         gp.inputNumberofChannels().clear();
         gp.inputNumberofChannels().sendKeys("1");
         gp.clickGenerate().click();
-//        WebElement huj = driver.findElement(By.className("modal-open"));
-//        huj.findElement(By.id("confirm-button")).click();
-
-
+        WebElement huj = driver.findElement(By.className("modal-open"));
+        huj.findElement(By.xpath("//button[@id='confirm-button']")).click();
     }
 
     @AfterTest(enabled = false)

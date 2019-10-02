@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
-import resources.Base;
 import resources.DriverInit;
 
 import java.io.IOException;

@@ -61,7 +61,7 @@ public class GenerateTest {
         huj.findElement(By.xpath("//button[@id='confirm-button']")).click();
     }
 
-    @AfterTest(enabled = false)
+    @AfterTest()
     public void closeBrowser() {
         driver.quit();
         driver = null;

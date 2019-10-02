@@ -4,15 +4,6 @@
     <listeners>
         <listener class-name="resources.TestListeners"/>
     </listeners>
-    <test verbose="3" preserve-order="true" name="disableLicenseKey">
-        <classes>
-            <class name="testObjects.DisableTest">
-                <methods>
-                    <include name="disableKey"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
     <test verbose="3" preserve-order="true" name="login">
         <classes>
             <class name="testObjects.LoginTest">
@@ -28,6 +19,15 @@
             <class name="testObjects.GenerateTest">
                 <methods>
                     <include name="generatePermanentPurchased"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="3" preserve-order="true" name="disableLicenseKey">
+        <classes>
+            <class name="testObjects.DisableTest">
+                <methods>
+                    <include name="disableKey"/>
                 </methods>
             </class>
         </classes>

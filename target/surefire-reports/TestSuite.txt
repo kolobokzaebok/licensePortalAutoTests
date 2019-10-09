@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.963 s <<< FAILURE! - in TestSuite
-generatePermanentPurchased(testObjects.GenerateTest)  Time elapsed: 11.017 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#company"}
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'zalupa', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-64-generic', java.version: '11.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: /tmp/.com.google.Chrome.pGxK5C}, goog:chromeOptions: {debuggerAddress: localhost:44131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 93d5cd9d6b9ce04190e0f826ceac49a2
-*** Element info: {Using=id, value=company}
-	at testObjects.GenerateTest.generatePermanentPurchased(GenerateTest.java:38)
-
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.744 s - in TestSuite

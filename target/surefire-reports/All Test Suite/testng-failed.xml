@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="resources.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="generate(failed)" verbose="0">
+  <test thread-count="5" name="disableLicenseKey(failed)" verbose="0">
     <classes>
-      <class name="testObjects.GenerateTest">
+      <class name="testObjects.DisableTest">
         <methods>
-          <include name="authorize"/>
-          <include name="generatePermanentPurchased"/>
+          <include name="disableKey"/>
           <include name="closeBrowser"/>
+          <include name="authorize"/>
         </methods>
-      </class> <!-- testObjects.GenerateTest -->
+      </class> <!-- testObjects.DisableTest -->
     </classes>
-  </test> <!-- generate(failed) -->
+  </test> <!-- disableLicenseKey(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

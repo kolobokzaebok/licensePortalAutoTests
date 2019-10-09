@@ -42,9 +42,7 @@ public class DriverInit extends Base{
         } else {
             // initialize driver with a default value
         }
-
-        driver.manage().timeouts().implicitlyWait(getImplicitWaitTime(), TimeUnit.SECONDS);
-
+//        setImplicitWait();
         return driver;
     }
 
@@ -55,5 +53,10 @@ public class DriverInit extends Base{
         dest = new File(String.format(getScrnDirPath() + "%s.png", name));
         FileUtils.copyFile(src, dest);
     }
+
+    // set implicit wait
+//    private void setImplicitWait() {
+//        driver.manage().timeouts().implicitlyWait(getImplicitWaitTime(), TimeUnit.SECONDS);
+//    }
 
 }

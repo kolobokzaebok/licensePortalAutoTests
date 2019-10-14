@@ -1,0 +1,10 @@
+NAME=hdwitness_all_cn
+SERIAL=D877-VP1W-42VJ-34MU
+HWID=05a21913cbabbe8027383c8ba6db645ac3
+COUNT=1
+CLASS=digital
+VERSION=manual
+BRAND=hdwitness_all_cn
+EXPIRATION=
+SIGNATURE2=XPwOxYOQ31sL2zCg/+bKrNNYslnhv+ROAV6ubIeELiEVsYd8o7E6hdcgfZz+nxcxXPi4H2G6zvuhqAypTRjzJw==
+

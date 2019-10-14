@@ -23,6 +23,15 @@
             </class>
         </classes>
     </test>
+    <test verbose="3" preserve-order="true" name="activate">
+        <classes>
+            <class name="testObjects.ActivateTest">
+                <methods>
+                    <include name="activateKey"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
     <test verbose="3" preserve-order="true" name="disableLicenseKey">
         <classes>
             <class name="testObjects.DisableTest">

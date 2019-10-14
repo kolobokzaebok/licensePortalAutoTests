@@ -9,8 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
+import java.util.HashMap;
 
 public class DriverInit extends Base{
     private static WebDriver driver;
@@ -28,14 +27,16 @@ public class DriverInit extends Base{
         if (browserName.contains("chrome")) {
             // set driver to Chrome
             System.setProperty("webdriver.chrome.driver", getDriverLocation());
+            HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+            chromePrefs.put("profile.default_content_settings.popups", 0);
+            chromePrefs.put("download.default_directory", getDwnloadDirPath());
+            ChromeOptions options=new ChromeOptions();
+            options.setExperimentalOption("prefs", chromePrefs);
 
             if (browserName.contains("headless")) {
-                ChromeOptions options = new ChromeOptions();
                 options.addArguments("headless");
-                driver = new ChromeDriver(options);
-            } else {
-                driver = new ChromeDriver();
             }
+            driver = new ChromeDriver(options);
 
         } else if (browserName.equals("firefox")) {
             // initialize driver as firefox

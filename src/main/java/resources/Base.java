@@ -12,6 +12,7 @@ public class Base {
     private String basePassword;
     private String driverLocation;
     private String scrnDirPath;
+    private String dwnloadDirPath;
     private int implicitWaitTime;
 
     // Base Constructor
@@ -26,17 +27,21 @@ public class Base {
         String drvWin = "\\src\\main\\java\\resources\\cdriver.exe";
         String scrnLin = "/screenshots/";
         String scrnWin = "\\screenshots\\";
+        String dwnloadLin = "/downloads/";
+        String dwnloadWin = "\\downloads\\";
 
         if (osName.equals("linux")) {
             //OS: Linux
             baseFile = new FileInputStream(localDirectoryName + srcLin);
             driverLocation = localDirectoryName + drvLin;
             scrnDirPath = localDirectoryName + scrnLin;
+            dwnloadDirPath = localDirectoryName + dwnloadLin;
         } else {
             //OS: Windows
             baseFile = new FileInputStream(localDirectoryName + srcWin);
             driverLocation = localDirectoryName + drvWin;
             scrnDirPath = localDirectoryName + scrnWin;
+            dwnloadDirPath = localDirectoryName + dwnloadWin;
         }
 
         baseProp.load(baseFile);
@@ -54,6 +59,11 @@ public class Base {
     //return path to Screenshot(in case of failure) folder
     public String getScrnDirPath() {
         return scrnDirPath;
+    }
+
+    //return path to Downloads folder
+    public String getDwnloadDirPath() {
+        return dwnloadDirPath;
     }
 
     //return implicit wait time in seconds -- global

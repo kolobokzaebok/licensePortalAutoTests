@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="resources.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="disableLicenseKey(failed)" verbose="0">
+  <test thread-count="5" name="activate(failed)" verbose="0">
     <classes>
-      <class name="testObjects.DisableTest">
+      <class name="testObjects.ActivateTest">
         <methods>
-          <include name="disableKey"/>
           <include name="closeBrowser"/>
+          <include name="activateKey"/>
           <include name="authorize"/>
         </methods>
-      </class> <!-- testObjects.DisableTest -->
+      </class> <!-- testObjects.ActivateTest -->
     </classes>
-  </test> <!-- disableLicenseKey(failed) -->
+  </test> <!-- activate(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

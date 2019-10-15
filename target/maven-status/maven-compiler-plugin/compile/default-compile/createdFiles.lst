@@ -1,2 +1,3 @@
 pageObjects/DisablePage.class
+resources/Utilz.class
 pageObjects/ActivatePage.class

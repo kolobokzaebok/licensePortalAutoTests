@@ -13,6 +13,8 @@ public class Base {
     private String driverLocation;
     private String scrnDirPath;
     private String dwnloadDirPath;
+    private String csvPermPurchPath;
+    private String pathToResources;
     private int implicitWaitTime;
 
     // Base Constructor
@@ -29,6 +31,10 @@ public class Base {
         String scrnWin = "\\screenshots\\";
         String dwnloadLin = "/downloads/";
         String dwnloadWin = "\\downloads\\";
+        String csvPermPurchLin = "/src/main/java/resources/permanentPurchased.csv";
+        String csvPermPurchWin = "\\src\\main\\java\\resources\\permanentPurchased.csv";
+        String resourcesLin = "/src/main/java/resources/";
+        String resourcesWin = "\\src\\main\\java\\resources\\";
 
         if (osName.equals("linux")) {
             //OS: Linux
@@ -36,12 +42,16 @@ public class Base {
             driverLocation = localDirectoryName + drvLin;
             scrnDirPath = localDirectoryName + scrnLin;
             dwnloadDirPath = localDirectoryName + dwnloadLin;
+            csvPermPurchPath = localDirectoryName + csvPermPurchLin;
+            pathToResources = localDirectoryName + resourcesLin;
         } else {
             //OS: Windows
             baseFile = new FileInputStream(localDirectoryName + srcWin);
             driverLocation = localDirectoryName + drvWin;
             scrnDirPath = localDirectoryName + scrnWin;
             dwnloadDirPath = localDirectoryName + dwnloadWin;
+            csvPermPurchPath = localDirectoryName + csvPermPurchWin;
+            pathToResources = localDirectoryName + resourcesWin;
         }
 
         baseProp.load(baseFile);
@@ -64,6 +74,16 @@ public class Base {
     //return path to Downloads folder
     public String getDwnloadDirPath() {
         return dwnloadDirPath;
+    }
+
+    //return path to Permanent Purchased .csv
+    public String getCsvPermPurchPath() {
+        return csvPermPurchPath;
+    }
+
+    //return path to resources directory
+    public String getpathToResources() {
+        return pathToResources;
     }
 
     //return implicit wait time in seconds -- global

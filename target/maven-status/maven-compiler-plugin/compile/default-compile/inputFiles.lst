@@ -3,5 +3,6 @@
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/pageObjects/LoginPage.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/Base.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/DriverInit.java
+/home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/Utilz.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/pageObjects/DisablePage.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/TestListeners.java

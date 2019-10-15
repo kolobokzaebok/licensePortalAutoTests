@@ -1,6 +1,5 @@
 package testObjects;
 
-import com.opencsv.CSVWriter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +12,7 @@ import org.testng.annotations.Test;
 import pageObjects.GeneratePage;
 import pageObjects.LoginPage;
 import resources.DriverInit;
+import resources.Utilz;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -37,7 +37,6 @@ public class GenerateTest {
         Set<String> allWindowsSet = driver.getWindowHandles();
         List allWindowsList = new ArrayList<>(allWindowsSet);
         driver.switchTo().window(allWindowsList.get(1).toString());
-//        System.out.println(driver.findElement(By.tagName("pre")).getText());
         return driver.findElement(By.tagName("pre")).getText();
     }
 
@@ -51,38 +50,6 @@ public class GenerateTest {
         return clean;
     }
 
-    private void writeToFile(List<String> myList, String fileName) {
-        File file = new File("/home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/" +
-                fileName);
-
-        try {
-            // create FileWriter object with file as parameter
-            FileWriter outputFile = new FileWriter(file);
-
-            // create CSVWriter object fileWriter object as parameter
-            CSVWriter writer = new CSVWriter(outputFile, CSVWriter.NO_QUOTE_CHARACTER, ' ',
-                    CSVWriter.DEFAULT_ESCAPE_CHARACTER,
-                    CSVWriter.DEFAULT_LINE_END);
-
-//            // adding header to csv
-//            String[] header = { "license key" };
-//            writer.writeNext(header);
-
-            // add data to csv
-            for (String license: myList) {
-                String[] entry = {license};
-                writer.writeNext(entry);
-            }
-
-            // closing writer connection
-            writer.close();
-        }
-        catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
-
     @BeforeTest
     public void authorize() throws IOException {
         LoginPage lp = new LoginPage(this.driver);
@@ -92,7 +59,7 @@ public class GenerateTest {
     }
 
     @Test
-    public void generatePermanentPurchased() {
+    public void generatePermanentPurchased() throws IOException {
         Select selectCompany = new Select(gp.selectCompany());
         Select selectOrderType = new Select(gp.selectOrderType());
         Select selectAuthorizedBy = new Select(gp.selectAuthorizedBy());
@@ -124,7 +91,7 @@ public class GenerateTest {
         clickConfirm.until(ExpectedConditions.elementToBeClickable(confirmButton));
         confirmButton.click();
 
-        writeToFile(separateKeys(getGeneratedKeys()), "permanentPurchased.csv");
+        Utilz.writeToFileCsv(separateKeys(getGeneratedKeys()), "permanentPurchased.csv");
     }
 
     @AfterTest()

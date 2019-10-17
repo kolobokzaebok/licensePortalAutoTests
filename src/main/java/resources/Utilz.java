@@ -1,6 +1,10 @@
 package resources;
 
 import com.opencsv.CSVWriter;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -61,6 +65,11 @@ public class Utilz {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
+
+    public static void setExplicitWait(WebDriver driver, int seconds, WebElement element) {
+        WebDriverWait w = new WebDriverWait(driver, seconds);
+        w.until(ExpectedConditions.visibilityOf(element));
     }
 
 }

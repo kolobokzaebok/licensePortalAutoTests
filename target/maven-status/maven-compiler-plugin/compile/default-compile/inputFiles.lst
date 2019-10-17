@@ -2,6 +2,7 @@
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/pageObjects/GeneratePage.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/pageObjects/LoginPage.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/Base.java
+/home/principal/devPlace/licensePortalAutoTests/src/main/java/pageObjects/DeactivatePage.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/DriverInit.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/resources/Utilz.java
 /home/principal/devPlace/licensePortalAutoTests/src/main/java/pageObjects/DisablePage.java

@@ -32,6 +32,15 @@
             </class>
         </classes>
     </test>
+    <test verbose="3" preserve-order="true" name="deactivateLicenseKey">
+        <classes>
+            <class name="testObjects.DeactivateTest">
+                <methods>
+                    <include name="deactivateKey"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
     <test verbose="3" preserve-order="true" name="disableLicenseKey">
         <classes>
             <class name="testObjects.DisableTest">

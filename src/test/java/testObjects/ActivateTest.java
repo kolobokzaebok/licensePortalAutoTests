@@ -47,7 +47,7 @@ public class ActivateTest {
         Thread.sleep(2000);
         File f = new File(this.downloadDir + key + "-activation.txt");
         Assert.assertTrue(f.exists());
-//        f.delete();
+        f.delete();
     }
 
     @AfterTest()

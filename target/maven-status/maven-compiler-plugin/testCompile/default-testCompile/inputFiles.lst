@@ -1,6 +1,8 @@
 /home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/DisableTest.java
 /home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/LoginTest.java
+/home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/ReportTest.java
 /home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/ActivateTest.java
+/home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/InformationTest.java
 /home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/DraftClass.java
 /home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/GenerateTest.java
 /home/principal/devPlace/licensePortalAutoTests/src/test/java/testObjects/DeactivateTest.java

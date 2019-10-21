@@ -1,4 +1,6 @@
 pageObjects/DisablePage.class
 pageObjects/DeactivatePage.class
 resources/Utilz.class
+pageObjects/InformationPage.class
+pageObjects/ReportPage.class
 pageObjects/ActivatePage.class

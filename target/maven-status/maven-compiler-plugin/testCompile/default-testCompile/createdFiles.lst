@@ -1,3 +1,5 @@
 testObjects/ActivateTest.class
 testObjects/DisableTest.class
+testObjects/ReportTest.class
 testObjects/DeactivateTest.class
+testObjects/InformationTest.class

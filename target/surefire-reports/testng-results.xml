@@ -1,297 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-17T07:32:14Z" name="All Test Suite" finished-at="2019-10-17T07:32:59Z" duration-ms="45023">
+  <suite started-at="2019-10-21T01:05:23Z" name="All Test Suite" finished-at="2019-10-21T01:06:03Z" duration-ms="39892">
     <groups>
     </groups>
-    <test started-at="2019-10-17T07:32:14Z" name="login" finished-at="2019-10-17T07:32:16Z" duration-ms="2373">
+    <test started-at="2019-10-21T01:05:23Z" name="login" finished-at="2019-10-21T01:05:25Z" duration-ms="2471">
       <class name="testObjects.LoginTest">
-        <test-method signature="unsuccessfulLogin()[pri:0, instance:testObjects.LoginTest@24d4d7c9]" started-at="2019-10-17T07:32:14Z" name="unsuccessfulLogin" finished-at="2019-10-17T07:32:15Z" duration-ms="1040" status="PASS">
+        <test-method signature="unsuccessfulLogin()[pri:0, instance:testObjects.LoginTest@24d4d7c9]" started-at="2019-10-21T01:05:23Z" name="unsuccessfulLogin" finished-at="2019-10-21T01:05:24Z" duration-ms="1013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unsuccessfulLogin -->
-        <test-method signature="successfulLogin()[pri:0, instance:testObjects.LoginTest@24d4d7c9]" started-at="2019-10-17T07:32:15Z" name="successfulLogin" finished-at="2019-10-17T07:32:16Z" duration-ms="1253" status="PASS">
+        <test-method signature="successfulLogin()[pri:0, instance:testObjects.LoginTest@24d4d7c9]" started-at="2019-10-21T01:05:24Z" name="successfulLogin" finished-at="2019-10-21T01:05:25Z" duration-ms="1381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.LoginTest@24d4d7c9]" started-at="2019-10-17T07:32:16Z" name="closeBrowser" finished-at="2019-10-17T07:32:16Z" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.LoginTest@24d4d7c9]" started-at="2019-10-21T01:05:25Z" name="closeBrowser" finished-at="2019-10-21T01:05:25Z" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testObjects.LoginTest -->
     </test> <!-- login -->
-    <test started-at="2019-10-17T07:32:16Z" name="generate" finished-at="2019-10-17T07:32:21Z" duration-ms="4194">
+    <test started-at="2019-10-21T01:05:25Z" name="generate" finished-at="2019-10-21T01:05:29Z" duration-ms="4124">
       <class name="testObjects.GenerateTest">
-        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.GenerateTest@63648ee9]" started-at="2019-10-17T07:32:16Z" name="authorize" finished-at="2019-10-17T07:32:18Z" duration-ms="1928" status="PASS">
+        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.GenerateTest@63648ee9]" started-at="2019-10-21T01:05:25Z" name="authorize" finished-at="2019-10-21T01:05:27Z" duration-ms="1856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorize -->
-        <test-method signature="generatePermanentPurchased()[pri:0, instance:testObjects.GenerateTest@63648ee9]" started-at="2019-10-17T07:32:18Z" name="generatePermanentPurchased" finished-at="2019-10-17T07:32:21Z" duration-ms="2201" status="PASS">
+        <test-method signature="generatePermanentPurchased()[pri:0, instance:testObjects.GenerateTest@63648ee9]" started-at="2019-10-21T01:05:27Z" name="generatePermanentPurchased" finished-at="2019-10-21T01:05:29Z" duration-ms="2203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generatePermanentPurchased -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.GenerateTest@63648ee9]" started-at="2019-10-17T07:32:21Z" name="closeBrowser" finished-at="2019-10-17T07:32:21Z" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.GenerateTest@63648ee9]" started-at="2019-10-21T01:05:29Z" name="closeBrowser" finished-at="2019-10-21T01:05:29Z" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testObjects.GenerateTest -->
     </test> <!-- generate -->
-    <test started-at="2019-10-17T07:32:21Z" name="activate" finished-at="2019-10-17T07:32:45Z" duration-ms="24720">
+    <test started-at="2019-10-21T01:05:29Z" name="activate" finished-at="2019-10-21T01:05:42Z" duration-ms="13121">
       <class name="testObjects.ActivateTest">
-        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:21Z" name="authorize" finished-at="2019-10-17T07:32:23Z" duration-ms="1951" status="PASS">
+        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-21T01:05:29Z" name="authorize" finished-at="2019-10-21T01:05:31Z" duration-ms="1713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorize -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:23Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:25Z" duration-ms="2287" status="PASS">
+        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-21T01:05:31Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-21T01:05:33Z" duration-ms="2298" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[BYQA-AGD5-29QU-N4VS]]>
+                <![CDATA[EPNK-XJFT-JSLA-B68S]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:25Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:27Z" duration-ms="2239" status="PASS">
+        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-21T01:05:33Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-21T01:05:36Z" duration-ms="2266" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[28DC-RMN6-6TH5-1YSH]]>
+                <![CDATA[IHFG-HINT-MJQD-HET7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:27Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:29Z" duration-ms="2280" status="PASS">
+        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-21T01:05:36Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-21T01:05:38Z" duration-ms="2253" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3517-8BTF-P8L4-4ZIP]]>
+                <![CDATA[H7AX-S62X-Q55G-HX5K]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:29Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:32Z" duration-ms="2285" status="PASS">
+        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-21T01:05:38Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-21T01:05:40Z" duration-ms="2254" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[JW4U-FSZB-4PCI-6HT6]]>
+                <![CDATA[ZZZJ-2NLZ-7QNR-11AY]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:32Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:34Z" duration-ms="2284" status="PASS">
+        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-21T01:05:40Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-21T01:05:42Z" duration-ms="2268" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1LO1-YJ7O-VOJF-MMB8]]>
+                <![CDATA[8XPM-A1DU-6GJA-4TYL]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:34Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:36Z" duration-ms="2267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6MA3-TVST-H8OD-B1N5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:36Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:38Z" duration-ms="2268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[STC9-Z6AI-XXD8-DBUQ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:38Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:41Z" duration-ms="2264" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[N4M8-X9QQ-V69Y-3N68]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:41Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:43Z" duration-ms="2259" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[XKBF-UJ8D-L6U5-E3WP]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activateKey -->
-        <test-method signature="activateKey(java.lang.String)[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:43Z" name="activateKey" data-provider="getKeys" finished-at="2019-10-17T07:32:45Z" duration-ms="2267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ZC2P-A3ZE-5D4E-WO9I]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activateKey -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-17T07:32:45Z" name="closeBrowser" finished-at="2019-10-17T07:32:45Z" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.ActivateTest@3a4e343]" started-at="2019-10-21T01:05:42Z" name="closeBrowser" finished-at="2019-10-21T01:05:42Z" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testObjects.ActivateTest -->
     </test> <!-- activate -->
-    <test started-at="2019-10-17T07:32:45Z" name="deactivateLicenseKey" finished-at="2019-10-17T07:32:56Z" duration-ms="10603">
+    <test started-at="2019-10-21T01:05:42Z" name="deactivateLicenseKey" finished-at="2019-10-21T01:05:49Z" duration-ms="6625">
       <class name="testObjects.DeactivateTest">
-        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.DeactivateTest@4efcf8a]" started-at="2019-10-17T07:32:45Z" name="authorize" finished-at="2019-10-17T07:32:47Z" duration-ms="1853" status="PASS">
+        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.DeactivateTest@4efcf8a]" started-at="2019-10-21T01:05:42Z" name="authorize" finished-at="2019-10-21T01:05:44Z" duration-ms="1853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorize -->
-        <test-method signature="deactivateKey()[pri:0, instance:testObjects.DeactivateTest@4efcf8a]" started-at="2019-10-17T07:32:47Z" name="deactivateKey" finished-at="2019-10-17T07:32:56Z" duration-ms="8750" status="PASS">
+        <test-method signature="deactivateKey()[pri:0, instance:testObjects.DeactivateTest@4efcf8a]" started-at="2019-10-21T01:05:44Z" name="deactivateKey" finished-at="2019-10-21T01:05:49Z" duration-ms="4703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deactivateKey -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.DeactivateTest@4efcf8a]" started-at="2019-10-21T01:05:49Z" name="closeBrowser" finished-at="2019-10-21T01:05:49Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- testObjects.DeactivateTest -->
     </test> <!-- deactivateLicenseKey -->
-    <test started-at="2019-10-17T07:32:56Z" name="disableLicenseKey" finished-at="2019-10-17T07:32:59Z" duration-ms="3102">
+    <test started-at="2019-10-21T01:05:49Z" name="disableLicenseKey" finished-at="2019-10-21T01:05:52Z" duration-ms="2829">
       <class name="testObjects.DisableTest">
-        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:56Z" name="authorize" finished-at="2019-10-17T07:32:58Z" duration-ms="1789" status="PASS">
+        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-21T01:05:49Z" name="authorize" finished-at="2019-10-21T01:05:51Z" duration-ms="1789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorize -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:58Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:58Z" duration-ms="167" status="PASS">
+        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-21T01:05:51Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-21T01:05:51Z" duration-ms="228" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[BYQA-AGD5-29QU-N4VS]]>
+                <![CDATA[EPNK-XJFT-JSLA-B68S]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:58Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:58Z" duration-ms="131" status="PASS">
+        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-21T01:05:51Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-21T01:05:51Z" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[28DC-RMN6-6TH5-1YSH]]>
+                <![CDATA[IHFG-HINT-MJQD-HET7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:58Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:58Z" duration-ms="113" status="PASS">
+        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-21T01:05:51Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-21T01:05:51Z" duration-ms="194" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3517-8BTF-P8L4-4ZIP]]>
+                <![CDATA[H7AX-S62X-Q55G-HX5K]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:58Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:58Z" duration-ms="121" status="PASS">
+        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-21T01:05:51Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-21T01:05:52Z" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[JW4U-FSZB-4PCI-6HT6]]>
+                <![CDATA[ZZZJ-2NLZ-7QNR-11AY]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:58Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:58Z" duration-ms="112" status="PASS">
+        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-21T01:05:52Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-21T01:05:52Z" duration-ms="188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1LO1-YJ7O-VOJF-MMB8]]>
+                <![CDATA[8XPM-A1DU-6GJA-4TYL]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:58Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:58Z" duration-ms="114" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6MA3-TVST-H8OD-B1N5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:58Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:59Z" duration-ms="118" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[STC9-Z6AI-XXD8-DBUQ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:59Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:59Z" duration-ms="114" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[N4M8-X9QQ-V69Y-3N68]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:59Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:59Z" duration-ms="127" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[XKBF-UJ8D-L6U5-E3WP]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableKey -->
-        <test-method signature="disableKey(java.lang.String)[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:59Z" name="disableKey" data-provider="getKeys" finished-at="2019-10-17T07:32:59Z" duration-ms="124" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ZC2P-A3ZE-5D4E-WO9I]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableKey -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-17T07:32:59Z" name="closeBrowser" finished-at="2019-10-17T07:32:59Z" duration-ms="66" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.DisableTest@1051817b]" started-at="2019-10-21T01:05:52Z" name="closeBrowser" finished-at="2019-10-21T01:05:52Z" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testObjects.DisableTest -->
     </test> <!-- disableLicenseKey -->
+    <test started-at="2019-10-21T01:05:52Z" name="generateActivationReport" finished-at="2019-10-21T01:05:55Z" duration-ms="2991">
+      <class name="testObjects.ReportTest">
+        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.ReportTest@2575f671]" started-at="2019-10-21T01:05:52Z" name="authorize" finished-at="2019-10-21T01:05:54Z" duration-ms="2003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authorize -->
+        <test-method signature="generateReport()[pri:0, instance:testObjects.ReportTest@2575f671]" started-at="2019-10-21T01:05:54Z" name="generateReport" finished-at="2019-10-21T01:05:55Z" duration-ms="918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.ReportTest@2575f671]" started-at="2019-10-21T01:05:55Z" name="closeBrowser" finished-at="2019-10-21T01:05:55Z" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testObjects.ReportTest -->
+    </test> <!-- generateActivationReport -->
+    <test started-at="2019-10-21T01:05:55Z" name="getInformation" finished-at="2019-10-21T01:06:03Z" duration-ms="7694">
+      <class name="testObjects.InformationTest">
+        <test-method is-config="true" signature="authorize()[pri:0, instance:testObjects.InformationTest@85ec632]" started-at="2019-10-21T01:05:55Z" name="authorize" finished-at="2019-10-21T01:05:57Z" duration-ms="1793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authorize -->
+        <test-method signature="getInformationOnProperKey()[pri:0, instance:testObjects.InformationTest@85ec632]" started-at="2019-10-21T01:05:57Z" name="getInformationOnProperKey" finished-at="2019-10-21T01:05:58Z" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInformationOnProperKey -->
+        <test-method signature="getInformationOnEmpty()[pri:0, instance:testObjects.InformationTest@85ec632]" started-at="2019-10-21T01:05:58Z" name="getInformationOnEmpty" finished-at="2019-10-21T01:05:58Z" duration-ms="952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInformationOnEmpty -->
+        <test-method signature="getInformationOnProperHwid()[pri:0, instance:testObjects.InformationTest@85ec632]" started-at="2019-10-21T01:05:58Z" name="getInformationOnProperHwid" finished-at="2019-10-21T01:06:03Z" duration-ms="4102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInformationOnProperHwid -->
+      </class> <!-- testObjects.InformationTest -->
+    </test> <!-- getInformation -->
   </suite> <!-- All Test Suite -->
 </testng-results>

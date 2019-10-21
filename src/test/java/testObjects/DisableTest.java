@@ -36,6 +36,7 @@ public class DisableTest {
     public void disableKey(String key) {
         dp.inputKey().clear();
         dp.inputKey().sendKeys(key);
+        Utilz.setExplicitWait(this.driver, 2, dp.clickDisable());
         dp.clickDisable().click();
     }
 

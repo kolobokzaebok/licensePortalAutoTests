@@ -50,4 +50,24 @@
             </class>
         </classes>
     </test>
+    <test verbose="3" preserve-order="true" name="generateActivationReport">
+        <classes>
+            <class name="testObjects.ReportTest">
+                <methods>
+                    <include name="generateReport"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="3" preserve-order="true" name="getInformation">
+        <classes>
+            <class name="testObjects.InformationTest">
+                <methods>
+                    <include name="getInformationOnProperKey"/>
+                    <include name="getInformationOnEmpty"/>
+                    <include name="getInformationOnProperHwid"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

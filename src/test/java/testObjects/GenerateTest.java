@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -60,27 +59,20 @@ public class GenerateTest {
 
     @Test
     public void generatePermanentPurchased() throws IOException {
-        Select selectCompany = new Select(gp.selectCompany());
-        Select selectOrderType = new Select(gp.selectOrderType());
-        Select selectAuthorizedBy = new Select(gp.selectAuthorizedBy());
-        Select selectBrand = new Select(gp.selectBrand());
-        Select selectLicenseType = new Select(gp.selectType());
-        Select selectPermanentTime = new Select(gp.selectPermanentTime());
-
         gp.inputProjectName().clear();
         gp.inputProjectName().sendKeys("autotest_Project1");
-        selectCompany.selectByIndex(3);
-        selectOrderType.selectByIndex(2);
+        gp.selectCompany().selectByIndex(2);
+        gp.selectOrderType().selectByIndex(2);
         gp.inputOrderId().clear();
         gp.inputOrderId().sendKeys("autotest_Order1");
-        selectAuthorizedBy.selectByIndex(3);
+        gp.selectAuthorizedBy().selectByIndex(3);
         gp.inputRequestor().clear();
         gp.inputRequestor().sendKeys("autotest_Requestor1");
-        selectBrand.selectByIndex(3);
-        selectLicenseType.selectByIndex(1);
-        selectPermanentTime.selectByIndex(1);
+        gp.selectBrand().selectByIndex(3);
+        gp.selectType().selectByIndex(1);
+        gp.selectPermanentTime().selectByIndex(1);
         gp.inputNumberofPackages().clear();
-        gp.inputNumberofPackages().sendKeys("10");
+        gp.inputNumberofPackages().sendKeys("5");
         gp.inputNumberofChannels().clear();
         gp.inputNumberofChannels().sendKeys("1");
         gp.clickGenerate().click();

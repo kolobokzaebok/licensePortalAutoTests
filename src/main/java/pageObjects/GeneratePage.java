@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class GeneratePage {
     private static String generateTabUrl;
@@ -32,16 +33,16 @@ public class GeneratePage {
     @FindBy(id = "company")
     private WebElement company_dropDown;
 
-    public WebElement selectCompany() {
-        return company_dropDown;
+    public Select selectCompany() {
+        return new Select(company_dropDown);
     }
 
     //------------------------
     @FindBy(id = "ordertype")
     private WebElement orderType_dropDown;
 
-    public WebElement selectOrderType() {
-        return orderType_dropDown;
+    public Select selectOrderType() {
+        return new Select(orderType_dropDown);
     }
 
     //------------------------
@@ -56,8 +57,8 @@ public class GeneratePage {
     @FindBy(id = "authorizedby")
     private WebElement authorizedBy_dropDown;
 
-    public WebElement selectAuthorizedBy() {
-        return authorizedBy_dropDown;
+    public Select selectAuthorizedBy() {
+        return new Select(authorizedBy_dropDown);
     }
 
     //------------------------
@@ -72,24 +73,24 @@ public class GeneratePage {
     @FindBy(id = "brand")
     private WebElement brand_dropDown;
 
-    public WebElement selectBrand() {
-        return brand_dropDown;
+    public Select selectBrand() {
+        return new Select(brand_dropDown);
     }
 
     //------------------------
     @FindBy(id = "class")
     private WebElement type_dropDown;
 
-    public WebElement selectType() {
-        return type_dropDown;
+    public Select selectType() {
+        return new Select(type_dropDown);
     }
 
     //------------------------
     @FindBy(id = "trialdays")
     private WebElement permanentTime_dropDown;
 
-    public WebElement selectPermanentTime() {
-        return permanentTime_dropDown;
+    public Select selectPermanentTime() {
+        return new Select(permanentTime_dropDown);
     }
 
     //------------------------
